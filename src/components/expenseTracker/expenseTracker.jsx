@@ -69,7 +69,7 @@ const ExpenseTracker = () => {
                 <hr/>
                 <ul>
                     {
-                        state.map((value) => {
+                        state.map((value    ) => {
                             return <li key={value.id}>
                                 
                                 <span>{value.description}</span>

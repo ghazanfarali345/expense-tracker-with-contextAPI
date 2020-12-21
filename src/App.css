@@ -43,7 +43,7 @@ body {
   border-right: 1px solid #dedede;
 }
 .transation-list{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px
@@ -65,7 +65,7 @@ body {
   margin: 10px 0;
 }
 .input{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   padding-right: 22px;
   justify-content: center;
   /* overflow: hidden; */
