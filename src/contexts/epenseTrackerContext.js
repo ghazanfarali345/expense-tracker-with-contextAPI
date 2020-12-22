@@ -4,10 +4,7 @@ import {expenseTrakerReduer  } from "../reducers/expenseTrakerReduer";
 const initialState = [
     {id:1, amount: 20, description:'cash'},
     {id:2, amount: -770, description:'utility bill'},
-    {id:3, amount: 820, description:'earning'},
-    {id:4, amount: -20, description:'refreshments'},
-    
-
+   
 ]
 
 export const TransactionContext = createContext(initialState)

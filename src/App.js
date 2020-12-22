@@ -1,14 +1,25 @@
 import './App.css';
-import ExpenseTracker  from './components/expenseTracker/expenseTracker'
 import { ExpenseTrackerProvider } from "./contexts/epenseTrackerContext";
+import {Header} from './components/expenseTracker/Header'
+import {Balance} from './components/expenseTracker/Balance'
+import { IncomeExpense } from "./components/expenseTracker/IncomeExpense";
+import { TrasactionsList } from "./components/expenseTracker/TransactionsList";
+import { AddTransactions } from "./components/expenseTracker/AddTransactions";
+
 
 function App() {
   return (
-    <div>
+    
       <ExpenseTrackerProvider >
-        <ExpenseTracker/>
+        <div className="container">
+          <Header />
+          <Balance/>
+          <IncomeExpense/>
+          <TrasactionsList/>
+          <AddTransactions/>
+        </div>
       </ExpenseTrackerProvider>
-    </div>
+  
   );
 }
 
