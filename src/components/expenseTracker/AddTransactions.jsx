@@ -25,12 +25,12 @@ export const AddTransactions = () => {
             <label>Description</label>
             <br />
 
-            <input type="text" onChange={(e)=>setDescription(e.target.value)} />
+            <input type="text" placeholder="Add transaction cause here...." onChange={(e)=>setDescription(e.target.value)} />
             <br />
             <label>Amount</label>
             <br />
 
-            <input type="number" onChange={(e)=>setAmount(e.target.value)} />
+            <input type="number" placeholder="Add amount in digits only...." onChange={(e)=>setAmount(e.target.value)} />
             <br />
             <button   className="btn" >Submit</button>
         </form>

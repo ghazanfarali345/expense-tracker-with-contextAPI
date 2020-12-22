@@ -9,7 +9,7 @@ export const Balance = () => {
     const sign = totalIncome < 0 ? '-' : '+'
 
     return (
-        <div className="balance-container text-center pt-20">
+        <div className="balance-container text-center">
             <span ><b>Current Balance</b></span><br/>
             <span className="text-size">{sign}${Math.abs(totalIncome)}</span>
         </div>

@@ -18,7 +18,26 @@ body {
 .text-center{
   text-align: center;
 }
-.pt-20{
+.c-red{
+  color: #e74c3c;
+}
+.c-green{
+  color: green;
+}
+.b-green{
+   border-right: green solid 5px;
+   border-radius: 5px;
+}
+.b-red{
+  border-right: #e74c3c solid 5px;
+}
+.background-green{
+  background-color: green;
+}
+.background-red{
+  background-color: #e74c3c;
+}
+.pt-10{
   padding-top: 10px;
 }
 .text-size{
@@ -63,6 +82,7 @@ body {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  border-radius: 5px
 }
 .input{
   /* border: solid 1px red; */
@@ -79,16 +99,7 @@ body {
   padding: 10px;
   width: 100%;
 }
-/* input[type='text'],
-input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-  
-} */
+
 .btn {
   cursor: pointer;
   background-color: rgb(65, 136, 230);
@@ -105,7 +116,7 @@ input[type='number'] {
 }
 .delete-btn {
   cursor: pointer;
-  background-color: #e74c3c;
+  /* background-color: #e74c3c; */
   border: 0;
   color: #fff;
   font-size: 20px;

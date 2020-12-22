@@ -12,15 +12,15 @@ export const TrasactionsList = () => {
     return (
         <div className="transation-list">
         <h3>History</h3>
-        <hr/>
+        <hr/>   
         <ul>
             {
                 state.map((value    ) => {
-                    return <li key={value.id}>
+                    return <li className={value.amount < 0 ? 'b-red' : 'b-green'} key={value.id}>
                         
                         <span>{value.description}</span>
                         <span>{value.amount < 0 ? '-' : '+'}${Math.abs(value.amount)}</span>
-                        <button onClick={()=>removeListItem(value.id)} className="delete-btn ">x</button></li>
+                        <button onClick={()=>removeListItem(value.id)} className={`delete-btn ${value.amount > 0 ? 'background-green' : 'background-red'}`}>x</button></li>
                 })
             }
         </ul>
