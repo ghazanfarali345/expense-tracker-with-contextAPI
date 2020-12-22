@@ -25,14 +25,14 @@ export const AddTransactions = () => {
             <label>Description</label>
             <br />
 
-            <input type="text" placeholder="Add transaction cause here...." onChange={(e)=>setDescription(e.target.value)} />
+            <input type="text" value={description} required placeholder="Add transaction cause here...." onChange={(e)=>setDescription(e.target.value)} />
             <br />
             <label>Amount</label>
             <br />
 
-            <input type="number" placeholder="Add amount in digits only...." onChange={(e)=>setAmount(e.target.value)} />
+            <input type="number" value={amount} required placeholder="Add amount in digits only...." onChange={(e)=>setAmount(e.target.value)} />
             <br />
-            <button   className="btn" >Submit</button>
+            <button  className="btn" >Submit</button>
         </form>
         </div>
 
