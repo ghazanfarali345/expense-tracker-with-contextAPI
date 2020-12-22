@@ -15,8 +15,8 @@ export const IncomeExpense = () => {
     
     return (
         <div className="income-expense-container">
-                <div >Income <br /><span className="c-green">${income}</span></div>
-                <div> Expense <br /><span className="c-red"> ${Math.abs(expense)}</span></div>
+                <div ><b>Income <br /><span className="c-green">${income}</span></b></div>
+                <div> <b>Expense <br /><span className="c-red"> ${Math.abs(expense)}</span></b></div>
             </div>
     )
 }
